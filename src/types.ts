@@ -3,16 +3,12 @@ export interface Item {
   title: string;
   icon: string;
   folderId: string | null;
+  order: number;
 }
 
 export interface Folder {
   id: string;
   name: string;
   isOpen: boolean;
-}
-
-export interface DragItem {
-  id: string;
-  type: 'ITEM' | 'FOLDER';
-  index: number;
+  order: number;
 }
